@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.banner{
+    background-image: url("banner_image.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+section.banner > h1{
+    font-family: 'titulo';
+    color: #FA1E4E;
+    font-size: 5vh;
+}
+#btn-banner{
+    background-color: #7a1c7a;
+    color: #f1e1e1; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+  }
+  
+ 
+  #btn-banner:hover {
+    background-color: #FA1E4E; 
+    transform: scale(1.1); 
+    transition: all 0.3s; 
+  }
+  @font-face {
+    font-family: "titulo"; 
+    src: url("SuperCool.ttf") format("truetype"); 
+  }
+
+  button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+
+  .servicos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FA1E4E;
+    height: 50vh;
+  }
+  .servicos > h1{
+    justify-content: center;
+    display: flex;
+    color: #f1e1e1;
+    overflow-y: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+  }
+  .servicos  p{
+    height: 10%;
+    margin: 0;
+    padding: 0;
+    color: #f1e1e1;
+  }
+  .servicos > div{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  div.imagens-servicos > div{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+  div.imagens-servicos  h2{
+    margin: 0;
+    padding: 0;
+    color: #7a1c7a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    height: 90vh;
+    padding-top: 10vh; 
+    background-color: #7a1c7a;
+    padding-left: 1vh;
+  }
+  
+  .portfolio img {
+    width: 70%; 
+    height: 60%;
+    border: none;
+  }
+  #nosso-portfolio{}
+
+  .portfolio h3{
+    justify-self: center;  
+  }
+
+  .portfolio h1 {
+    text-align: center; 
+  }
+  
