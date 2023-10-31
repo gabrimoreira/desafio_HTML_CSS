@@ -1,10 +1,51 @@
-body{
+*{
     margin: 0;
     padding: 0;
     border: none;
 }
+
+.section-inicial {
+  background-color: #fbf7f7;
+  height: 500px;
+  text-align: center;
+  padding: 100px;
+}
+
+.navbar {
+  background-color: #333;
+  color: #f6f6f6;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  text-align: center; 
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 15px; 
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #f9f2f2;
+  font-size: 18px; 
+}
+
+.navbar a:hover {
+  color: #00aaff; 
+}
+
+
 .banner{
-    background-image: url("banner_image.jpg");
+    background-image: url("/images/banner_image.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     height: 50vh;
@@ -12,6 +53,10 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+@font-face {
+  font-family: "titulo"; 
+  src: url("SuperCool.ttf") format("truetype"); 
 }
 section.banner > h1{
     font-family: 'titulo';
@@ -26,7 +71,13 @@ section.banner > h1{
     border-radius: 5px; 
     font-size: 16px; 
     cursor: pointer; 
+    margin: 10px;
   }
+  #btn-banner a {
+    text-decoration: none;
+    color: #eee6e6;
+  }
+  
   
  
   #btn-banner:hover {
@@ -34,12 +85,9 @@ section.banner > h1{
     transform: scale(1.1); 
     transition: all 0.3s; 
   }
-  @font-face {
-    font-family: "titulo"; 
-    src: url("SuperCool.ttf") format("truetype"); 
-  }
 
-  button{
+
+  #btn-banner a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
   }
@@ -84,23 +132,30 @@ section.banner > h1{
   }
   
   .portfolio {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: #7a1c7a;
-    padding-left: 1vh;
+    height: 50vh;
   }
   .portfolio h1{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    /*grid-column: 1/4*/
+    text-align: center;
   }
+  .portfolio-linha{
+    display: flex;
+    flex-direction: row;
+    he
+  }
+  /*
+  .portfolio h1{
+    grid-column: 1/4
+  }
+  
   .portfolio img {
     width: 70%; 
     height: 60%;
     border: none;
   }
+  
   #nosso-portfolio{}
 
   .portfolio h3{
@@ -110,4 +165,4 @@ section.banner > h1{
   .portfolio h1 {
     text-align: center; 
   }
-  
+  */
