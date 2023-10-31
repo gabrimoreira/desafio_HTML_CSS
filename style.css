@@ -86,13 +86,16 @@ section.banner > h1{
   .portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr;
-    height: 90vh;
-    padding-top: 10vh; 
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
     background-color: #7a1c7a;
     padding-left: 1vh;
   }
-  
+  .portfolio h1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /*grid-column: 1/4*/
+  }
   .portfolio img {
     width: 70%; 
     height: 60%;
