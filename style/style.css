@@ -43,7 +43,7 @@
   color: #00aaff; 
 }
 
-
+  /*Início das alterações para o banner inicial*/
 .banner{
     background-image: url("/images/banner_image.jpg");
     background-size:cover;
@@ -91,17 +91,17 @@ section.banner > h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
   }
-
+  /*Início das alterações para os serviços*/
   .servicos{
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: #FA1E4E;
     height: 50vh;
+    width: 100%;
   }
   .servicos > h1{
-    justify-content: center;
-    display: flex;
+    align-self: center;
     color: #f1e1e1;
     overflow-y: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -118,11 +118,15 @@ section.banner > h1{
     justify-content: space-around;
     padding: 10px;
   }
-
+  
   div.imagens-servicos > div{
-    display: flex;
-    flex-direction: column;
-    width: 20%;
+    
+   
+  }
+  div.imagens-servicos img{
+    width: 100%;
+    width: 100px;
+    align-self: center;
   }
   div.imagens-servicos  h2{
     margin: 0;
@@ -130,39 +134,72 @@ section.banner > h1{
     color: #7a1c7a;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
-  
+  /*Início das alterações para o portfólio*/
   .portfolio {
     display: flex;
     flex-direction: column;
     background-color: #7a1c7a;
-    height: 50vh;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+
+  }
+  div.portfolio img{
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+
   }
   .portfolio h1{
-    text-align: center;
+    align-self: center;
+    color: #f1e1e1;
+    overflow-y: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
   }
+  /*lembra de usar media querie*/
   .portfolio-linha{
+    padding: 10px;
     display: flex;
-    flex-direction: row;
-    he
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-y: auto;
   }
-  /*
-  .portfolio h1{
-    grid-column: 1/4
+  .efeito-imagem-portfolio:hover {
+    opacity: 0.7;
+    cursor: pointer;
   }
-  
-  .portfolio img {
-    width: 70%; 
-    height: 60%;
-    border: none;
-  }
-  
-  #nosso-portfolio{}
-
-  .portfolio h3{
-    justify-self: center;  
+  .portfolio-linha h3{
+    text-align: center;
+    color: #f1e1e1;
+    overflow-y: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
   }
 
-  .portfolio h1 {
-    text-align: center; 
+  .time-line{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    background-color: #FA1E4E;
+    height: 100vh;
+    margin: 0;
   }
-  */
+  .container{
+    padding: 10px 50px;
+    width: 50%;
+    background: #e21340;
+  }
+  .texto{
+    padding: 20px 30px;
+    background:#decbcf;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  .esquerda{
+    left:0;
+  }
+  .direita{
+    left: 50%;
+  }
