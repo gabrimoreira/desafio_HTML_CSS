@@ -117,6 +117,9 @@ section.banner > h1{
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    /*overflow-x: auto;
+    flex-wrap: wrap;
+    */
   }
   
   div.imagens-servicos > div{
@@ -179,29 +182,110 @@ section.banner > h1{
   #nosso-portfolio{
 
   }
-  .time-line{
-    position: relative;
-    max-width: 1200px;
-    margin: 100px auto;
+
+  /*time line*/
+  .timeline{
     background-color: #FA1E4E;
     height: 100vh;
-    margin: 0;
-  }
-  .container{
-    padding: 10px 50px;
-    width: 50%;
-    background: #e21340;
-  }
-  .texto{
-    padding: 20px 30px;
-    background:#decbcf;
+}
+
+.timeline-area{
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+    border-left: 2px solid #ccc;
+    padding: 30px 20px 0 30px;
+}
+
+.timeline-area div{
+    background-color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    line-height: 1.7;
     position: relative;
-    border-radius: 6px;
-    font-size: 15px;
-  }
-  .esquerda{
-    left:0;
-  }
-  .direita{
-    left: 50%;
-  }
+    margin-bottom: 20px;
+    display: flex; 
+}
+
+div::before{
+    content: '';
+    display: block; 
+    width: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 3px solid #ddd;
+    position: absolute;
+    top: 10px;
+    left: -40px;
+}
+
+div::after{
+    content: ''; 
+  
+}
+
+.timeline-area p{
+    margin: 0;
+    font-size: 12px;
+}
+
+.timeline-area div h2{
+    margin: 0;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.card1::after{
+  content: '';
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-image: url("/images/game-finalFantasy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.card2::after{
+  content: '';
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-image: url("/images/game-gta.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.card3::after{
+  content: '';
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-image: url("/images/game-redDead.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.card4::after{
+  content: '';
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-image: url("/images/game-zelda.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  flex-shrink: 0;
+}
+.timeline-area small{
+  color: #fbfafa;
+
+}
