@@ -45,7 +45,7 @@
 
   /*Início das alterações para o banner inicial*/
 .banner{
-    background-image: url("/images/banner_image.jpg");
+    background-image: url("../images/banner_image.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     height: 50vh;
@@ -243,7 +243,7 @@ div::after{
   width: 50px;
   height: 50px;
   margin-left: 10px;
-  background-image: url("/images/game-finalFantasy.jpg");
+  background-image: url("../images/game-finalFantasy.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -255,7 +255,7 @@ div::after{
   width: 50px;
   height: 50px;
   margin-left: 10px;
-  background-image: url("/images/game-gta.jpg");
+  background-image: url("../images/game-gta.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -267,7 +267,7 @@ div::after{
   width: 50px;
   height: 50px;
   margin-left: 10px;
-  background-image: url("images/game-redDead.jpg");
+  background-image: url("../images/game-redDead.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
