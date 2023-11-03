@@ -289,3 +289,50 @@ div::after{
   color: #fbfafa;
 
 }
+
+
+.sessao-time {
+  background-color: #7a1c7a;
+  height: 100vh;
+}
+.sessao-time h2{
+  text-align: center;
+  padding-top: 3%;
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;  
+  color: #f9f2f2;
+}
+.cards-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.card-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.card-time img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.card-time h3 {
+  margin-top: 10px;
+  color: #7a1c7a;
+  font-size: 20px;
+}
+.redes-sociais {
+  display: flex;
+  margin-top: 10px;
+}
+.redes-sociais a {
+  margin: 5px;
+  color: #7a1c7a;
+  font-size: 25px;
+}
