@@ -122,10 +122,7 @@ section.banner > h1{
     */
   }
   
-  div.imagens-servicos > div{
-    
-   
-  }
+
   div.imagens-servicos img{
     width: 100%;
     width: 100px;
@@ -178,9 +175,6 @@ section.banner > h1{
     overflow-y: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-  }
-  #nosso-portfolio{
-
   }
 
   /*time line*/
@@ -290,7 +284,7 @@ div::after{
 
 }
 
-
+/*Sessão time*/
 .sessao-time {
   background-color: #7a1c7a;
   height: 100vh;
@@ -306,6 +300,7 @@ div::after{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 50px;
 }
 .card-time {
@@ -336,3 +331,154 @@ div::after{
   color: #7a1c7a;
   font-size: 25px;
 }
+
+.redes-sociais img{
+  width: 20px;
+  height: 20px;
+}
+.redes-sociais button{
+  background-color: white;
+
+}
+.redes-sociais button:hover{
+  background-color: white;
+  transition: all 0.3s;
+  transform: scale(1.1);
+
+}
+
+/* Formulario */
+
+#formulario{
+  background-color: #FA1E4E;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 3%;
+}
+
+
+
+.informacoes-pessoais{
+  margin-top: 2%;
+  margin-right: 3%;
+}
+.informacao-pessoal{
+  padding-bottom: 3%;
+}
+
+.informacao-pessoal label{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #e1dddd;
+}
+.comentario label{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #e1dddd;
+  display: block;
+  padding-top: 3%;
+  
+}
+
+#formulario button{
+  cursor: pointer;
+  padding: 1%;
+  border-radius: 7%;
+}
+#formulario button:hover{
+  opacity: 0.9;
+}
+#formulario h2{
+  text-align: center;
+  
+}
+
+/*Rodapé*/
+.rodape{
+  background-color: #7a1c7a;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.rodape h3{
+  color: #e1dddd;
+}
+.rodape-redes button{
+  background-color: #7a1c7a;
+  margin-left: 10px;
+}
+.rodape-redes img{
+  width: 15px;
+  height: 15px;
+  padding-top: 30%; 
+}
+
+/*Ids para gerar a conexão com a navbar*/
+#nosso-portfolio{}
+#time-line{}
+#nosso-time{}
+#formulario{}
+
+/**Para telas maiores**/
+@media (min-width: 1300px){
+  .timeline{
+    padding-top: 10px;
+  }
+  .timeline-area div{
+    line-height: 2.5;
+  }
+  .card-time > img {
+    width: 300px;
+    height: 300px;
+  }
+}
+/**Para telas medianas(exs:tablet)**/
+@media (min-width:600px) and (max-width:1024px){
+  div.portfolio img{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+
+  }
+  .card-time div {
+    width: 80px;
+    height: 50px;
+    border-radius: 50%;
+    
+  }
+  #formulario{
+    padding-top: 100px;
+  }
+}
+@media(max-width: 600px){
+  .servicos{
+    height: 100vh;
+
+  }
+  .servicos h1{
+    font-size: 30px;
+  }
+  .servicos div{
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .servicos p{
+    font-size: 15px;
+  }
+  div.portfolio-linha{
+    display: flex;  
+    flex-direction: column;
+  }
+  div.portfolio img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+
+  }
+}
+
