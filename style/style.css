@@ -429,7 +429,7 @@ div::after{
 /**Para telas medianas(exs:tablet)**/
 @media (min-width:600px) and (max-width:1024px){
   .sessao-time{
-    height: 150vh;
+    height: 120vh;
   }
   div.portfolio img{
     width: 150px;
