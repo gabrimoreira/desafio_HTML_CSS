@@ -428,6 +428,9 @@ div::after{
 }
 /**Para telas medianas(exs:tablet)**/
 @media (min-width:600px) and (max-width:1024px){
+  .sessao-time{
+    height: 150vh;
+  }
   div.portfolio img{
     width: 150px;
     height: 150px;
@@ -463,6 +466,9 @@ div::after{
   }
   .servicos p{
     font-size: 15px;
+  }
+  .servicos h1{
+    font-size: 10px;
   }
   div.portfolio-linha{
     display: flex;  
